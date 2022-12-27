@@ -21,6 +21,7 @@ call dein#add('nvim-lua/plenary.nvim')
 call dein#add('nvim-telescope/telescope.nvim', { 'rev': '0.1.0' })
 call dein#add('preservim/nerdtree')
 call dein#add('fatih/vim-go')
+call dein#add('mattn/emmet-vim')
 
 " Required:
 call dein#end()
