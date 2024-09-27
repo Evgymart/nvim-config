@@ -2,14 +2,17 @@
 
 let config_dir = "~/.var/app/io.neovim.nvim/config/nvim"
 
-source "$config_dir/preferences.vim"
+let $preferences = config_dir . "/preferences.vim"
+source $preferences
 
-source "$config_dir/plug.vim"
+let $plug = config_dir . "/plug.vim"
+source $plug
 
-source "$config_dir/plugins.vim"
+let $plugins = config_dir . "/plugins.vim"
+source $plugins
 
 " Include all scripts from the folder
 
-for f in split(glob("$config_dir/plugin_settings/*.vim"), '\n')
+for f in split(glob(config_dir . "/plugin_settings/*.vim"), '\n')
     exe 'source' f
 endfor
