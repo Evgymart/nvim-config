@@ -1,6 +1,6 @@
 " Init script
 
-let config_dir = "~/.var/app/io.neovim.nvim/config/nvim"
+let config_dir = "~/.config/nvim"
 
 let $preferences = config_dir . "/preferences.vim"
 source $preferences
